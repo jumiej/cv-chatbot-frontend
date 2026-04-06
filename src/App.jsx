@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import "./App.css";
+import jumiePhoto from "./assets/jumiePhoto.png";
 
 function App() {
   const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3002";
@@ -103,10 +104,13 @@ function App() {
       {/* Header */}
       <header className="header">
         <div className="header-content">
-          <h1>💼 Jumie's CV Assistant</h1>
-          <p className="subtitle">
-            Ask me anything about Ojumoola Akinyode (Jumie)
-          </p>
+          <img src={jumiePhoto} alt="Jumie" />
+          <div className="header-discription">
+            <h1> Jumie's CV Assistant</h1>
+            <p className="subtitle">
+              Ask me anything about Ojumoola Akinyode (Jumie)
+            </p>
+          </div>
         </div>
       </header>
 
